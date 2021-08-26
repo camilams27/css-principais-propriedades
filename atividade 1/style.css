@@ -1,0 +1,108 @@
+/* box-sizing */
+*{
+    box-sizing: border-box
+}
+
+/* importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@200&display=swap');
+
+/* adicionando cor de fundo - atividade 2 */
+body{
+    background-color: rgb(240, 215, 183);
+}
+
+/* Dividindo a página */
+section{
+    display: flex;
+    flex-direction: row;
+
+    /* especificação da atividade */
+    letter-spacing: 1.3em;
+}
+
+/* Organizando margens do conteúdo */
+.conteudo{
+    margin-top: 6vh;
+    margin-left: 5vh;
+}
+
+/* Colocando fundo nos h1's do conteúdo */
+h1[id^=titulo]{
+    font-size: 2vh;
+    background-color: #F0F1F0;
+}
+
+/* imagens */
+.img-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+
+    font-size: 2.5vh;
+}
+#img-panela{
+    height: 6vh;
+    padding-right: 1vh;
+}
+#img-avental{
+    height: 6vh;
+}
+
+/* Parte esquerda - lista de igredientes */
+#ingredientes{
+    width: 50vw;
+}
+
+/* títulos */
+h1{
+    margin: 0;
+    color: #D69574;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 200;
+
+    /* especificação da atividade */
+    text-transform: uppercase; 
+}
+
+/* bolinha da lista não ordenada */
+ul li::marker{
+    font-size: 1.5vh;
+}
+
+/* paragráfos */
+.modo, ul{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 2vh;
+}
+
+/* numeração */
+.numeros{
+    font-size: 4vh;
+    color: #AAAAAA;
+}
+
+/* Parte Direita */
+#modo-preparo, #ingredientes{
+    width: 50vw;
+}
+
+/* especificação da atividade */
+.xicara{
+    text-decoration: line-through;
+}
+
+/* Enquanto a tela for maior de 200px e menor que 1200px */
+@media (min-width:200px) and (max-width:991px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+}

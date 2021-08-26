@@ -1,0 +1,138 @@
+/* box-sizing */
+*{
+    box-sizing: border-box
+}
+
+/* importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@200&display=swap');
+
+/* adicionando cor de fundo - atividade 2 */
+body{
+    background-color: rgb(240, 215, 183);
+    margin: 0;
+    padding: 0;
+}
+
+/* Dividindo a página */
+section{
+    display: flex;
+    flex-direction: row;
+
+    /* especificação da atividade */
+    letter-spacing: 1.3em;
+}
+
+/* Organizando margens do conteúdo */
+.conteudo{
+    margin-top: 6vh;
+    margin-left: 5vh;
+}
+
+/* Colocando fundo nos h1's do conteúdo */
+h1[id^=titulo]{
+    font-size: 2vh;
+    background-color: #F0F1F0;
+
+    /* ativiadade 2 */
+    padding: 1vh;
+    margin: 1vh;
+}
+
+/* imagens */
+.img-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+
+    font-size: 2.5vh;
+}
+.imagens-lista{
+    height: 6vh; 
+    border-radius: 100%;
+    border:2px dotted #D69574;
+}
+#img-panela{
+    height: 6vh;
+    padding-right: 1vh;
+}
+#img-avental{
+    height: 6vh;
+}
+#img-empadao{
+    height: 30vh;
+    margin: 5vh 0;
+    width: 30vw;
+    margin-left: 6vw;
+}
+
+/* Parte esquerda */
+#ingredientes{
+    width: 50vw;
+}
+
+/* títulos */
+h1{
+    margin: 0;
+    color: #D69574;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 200;
+
+    /* especificação da atividade */
+    text-transform: uppercase; 
+}
+
+/* bolinha da lista não ordenada */
+ul li::marker{
+    font-size: 1.5vh;
+}
+
+/* paragráfos */
+.modo, ul{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 2vh;
+}
+
+/* numeração */
+.numeros{
+    font-size: 4vh;
+    color: #AAAAAA;
+}
+
+/* Parte Direita */
+#modo-preparo, #ingredientes{
+    width: 50vw;
+}
+
+/* especificação da atividade */
+.xicara{
+    text-decoration: line-through;
+}
+
+/* footer */
+footer{
+    height: 5vh;
+    width: 100vw;
+    background-color: #D69574;
+    position: fixed;
+    bottom: 0;
+}
+#p-footer{
+    text-align: center;
+    
+}
+
+/* Enquanto a tela for maior de 200px e menor que 1200px */
+@media (min-width:200px) and (max-width:991px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+}
